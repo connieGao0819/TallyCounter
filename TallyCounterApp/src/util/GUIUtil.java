@@ -1,9 +1,16 @@
 package util;
 
+import java.awt.Dimension;
+import java.io.File;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class GUIUtil {
+	
+	private static String imageFolder = "/Users/connie/Documents/GitHub/TallyCounter/TallyCounterApp/img";
 	
 	public static void showPanel(JPanel p, double stretchRate) {
 		GUIUtil.useLNF();
@@ -30,5 +37,14 @@ public class GUIUtil {
         }
     }
 	
+	public static void setImageIcon(JButton b, String fileName, String tip) {
+	    ImageIcon i = new ImageIcon(new File(imageFolder, fileName).getAbsolutePath());
+	    b.setIcon(i);
+	    b.setPreferredSize(new Dimension(61, 81));
+	    b.setToolTipText(tip);
+	    b.setVerticalTextPosition(JButton.BOTTOM);
+	    b.setHorizontalTextPosition(JButton.CENTER);
+	    b.setText(tip);
+	}
 	
 }
