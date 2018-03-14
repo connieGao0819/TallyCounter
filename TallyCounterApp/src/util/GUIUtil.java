@@ -17,7 +17,7 @@ public class GUIUtil {
 	public static void showPanel(JPanel p, double stretchRate) {
 		GUIUtil.useLNF();
 		JFrame f = new JFrame();
-		f.setSize(500, 500);
+		f.setSize(500, 400);
 		f.setLocationRelativeTo(null);
 		CenterPanel cp = new CenterPanel(stretchRate);
 		f.setContentPane(cp);

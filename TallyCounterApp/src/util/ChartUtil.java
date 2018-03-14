@@ -70,9 +70,9 @@ public class ChartUtil {
         // 显示图例说明
         chart.setLegendOn(true);
         // 把图例说明放在左侧
-        chart.setLegendPosition(Chart.LEFT);
+        chart.setLegendPosition(Chart.TOP);
         // 图例说明中的文字
-        chart.setLegendLabels(new String[] { "月消费报表" });
+        chart.setLegendLabels(new String[] { "Monthly consumption report" });
         // 图例说明的字体
         chart.setFont("legendFont", new Font("Dialog", Font.BOLD, 13));
         // 下方文字的字体
