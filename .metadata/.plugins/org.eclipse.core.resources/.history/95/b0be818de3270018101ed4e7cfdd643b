@@ -55,17 +55,6 @@ public class DateUtil {
 		long lastDayMilliSeconds = monthEnd().getTime();
 		long firstDayMilliSeconds = monthBegin().getTime();
 		
-		return (int) ((lastDayMilliSeconds-firstDayMilliSeconds) / millisecondsOfOneDay) + 1;
+		return (int) ((lastDayMilliSeconds-firstDayMilliSeconds)/millisecondsOfOneDay) + 1;
 	}
-	
-	public static int LeftDaysOfThisMonth() {
-		long lastDayMilliSeconds = monthEnd().getTime();
-		long todayMilliSeconds = today().getTime();
-		return (int) ((lastDayMilliSeconds-todayMilliSeconds) / millisecondsOfOneDay) +1;
-	}
-	
-	public static void main(String[] args) {
-        System.out.println(DateUtil.monthEnd());
-     
-    }
 }

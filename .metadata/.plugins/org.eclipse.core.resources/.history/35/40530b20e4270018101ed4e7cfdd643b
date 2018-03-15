@@ -37,7 +37,7 @@ public class DateUtil {
 	
 	public static Date monthEnd() {
 		Calendar c = Calendar.getInstance();
-		c.setTime(new Date());
+		//c.setTime(new Date());
 		
 		c.set(Calendar.HOUR, 0);
         c.set(Calendar.MINUTE, 0);
