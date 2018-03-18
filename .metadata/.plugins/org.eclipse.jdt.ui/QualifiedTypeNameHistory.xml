@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="util.GUIUtil"/>
     <fullyQualifiedTypeName name="org.jdesktop.swingx.JXDatePicker"/>
     <fullyQualifiedTypeName name="javax.swing.JPanel"/>
     <fullyQualifiedTypeName name="java.awt.List"/>
     <fullyQualifiedTypeName name="util.ColorUtil"/>
-    <fullyQualifiedTypeName name="gui.panel.MainPanel"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="util.DBUtil"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
@@ -15,4 +13,15 @@
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="util.GUIUtil"/>
+    <fullyQualifiedTypeName name="javax.swing.SwingUtilities"/>
+    <fullyQualifiedTypeName name="gui.frame.MainFrame"/>
+    <fullyQualifiedTypeName name="gui.panel.MainPanel"/>
+    <fullyQualifiedTypeName name="gui.panel.ChartPanel"/>
+    <fullyQualifiedTypeName name="gui.panel.CategoryPanel"/>
+    <fullyQualifiedTypeName name="gui.panel.SpendPanel"/>
+    <fullyQualifiedTypeName name="gui.panel.RecordPanel"/>
+    <fullyQualifiedTypeName name="gui.panel.ConfigPanel"/>
+    <fullyQualifiedTypeName name="gui.panel.BackupPanel"/>
+    <fullyQualifiedTypeName name="gui.panel.RecoverPanel"/>
 </qualifiedTypeNameHistroy>
