@@ -8,7 +8,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 public class GUIUtil {
 	
@@ -54,5 +56,28 @@ public class GUIUtil {
             c.setForeground(color);
         }
     }
+	
+	public static boolean checkEmpty(JTextField tf, String input) {
+		String text = tf.getText().trim();
+		if (text.length() == 0) {
+			JOptionPane.showMessageDialog(null, input + "cannot be null");
+			tf.grabFocus();
+			return true;
+		}
+		return false;
+	}
+	
+	public static boolean checkNumber(JTextField tf, String input) {
+		if (checkEmpty(tf, input)) return false;
+		String text = tf.getText().trim();
+		try {
+			Integer.parseInt(text);
+			return true;
+		} catch (NumberFormatException e1) {
+			JOptionPane.showMessageDialog(null, input + "should be integer!");
+			tf.grabFocus();
+			return false;
+		}
+	}
 	
 }

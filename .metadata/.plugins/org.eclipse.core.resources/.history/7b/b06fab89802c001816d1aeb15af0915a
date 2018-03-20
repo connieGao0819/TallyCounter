@@ -44,7 +44,7 @@ public class ConfigDAO {
 	}
 	
 	public void update(Config config) {
-		String sql = "update config set key_ = ?, value = ? where id = ?";
+		String sql = "update config set key = ?, value = ? where id = ?";
 		try (Connection c = DBUtil.getConnection(); PreparedStatement ps = c.prepareStatement(sql);) {
 			ps.setString(1, config.key);
 			ps.setString(2,  config.value);
@@ -114,7 +114,7 @@ public class ConfigDAO {
 	public Config getByKey(String key) {
 		Config config = null;
 		try (Connection c = DBUtil.getConnection(); Statement s = c.createStatement();) {
-			String sql = String.format("select * from config where key_ = '%s'", key);
+			String sql = "select * from config where key_=" + key;
 			ResultSet rs = s.executeQuery(sql);
 			if (rs.next()) {
 				config = new Config();

@@ -1,7 +1,0 @@
-package gui.panel;
-
-import javax.swing.JPanel;
-
-public class CategoryPanel extends JPanel{
-
-}

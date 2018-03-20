@@ -21,6 +21,6 @@ public class Bootstrap {
 				MainPanel.mainPanel.workingPanel.show(SpendPanel.spendPanel);
 			}
 			
-		});
+		});;
 	}
 }

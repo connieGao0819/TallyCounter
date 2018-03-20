@@ -13,7 +13,6 @@
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="util.GUIUtil"/>
     <fullyQualifiedTypeName name="javax.swing.SwingUtilities"/>
     <fullyQualifiedTypeName name="gui.frame.MainFrame"/>
     <fullyQualifiedTypeName name="gui.panel.MainPanel"/>
@@ -21,7 +20,10 @@
     <fullyQualifiedTypeName name="gui.panel.CategoryPanel"/>
     <fullyQualifiedTypeName name="gui.panel.SpendPanel"/>
     <fullyQualifiedTypeName name="gui.panel.RecordPanel"/>
-    <fullyQualifiedTypeName name="gui.panel.ConfigPanel"/>
     <fullyQualifiedTypeName name="gui.panel.BackupPanel"/>
     <fullyQualifiedTypeName name="gui.panel.RecoverPanel"/>
+    <fullyQualifiedTypeName name="entity.Config"/>
+    <fullyQualifiedTypeName name="gui.panel.ConfigPanel"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="util.GUIUtil"/>
 </qualifiedTypeNameHistroy>
