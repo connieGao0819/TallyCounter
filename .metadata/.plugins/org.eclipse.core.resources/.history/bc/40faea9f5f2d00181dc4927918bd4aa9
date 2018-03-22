@@ -1,17 +1,20 @@
 package gui.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
 
-import entity.Category;
-import service.CategoryService;
-
 public class CategoryTableModel implements TableModel {
 	
 	String[] columnNames = new String[] {"category name", "consumption times"};
-	public List<Category> cs = new CategoryService().list();
+	List<Category> cs = new CategoryService().list();
+	
+	public CategoryTableModel() {
+		cs.add("Dining");
+		cs.add("Transportation");
+	}
 	
 	@Override
 	public void addTableModelListener(TableModelListener arg0) {
@@ -46,17 +49,13 @@ public class CategoryTableModel implements TableModel {
 	@Override
 	public Object getValueAt(int rowIndex, int columnIndex) {
 		// TODO Auto-generated method stub
-		Category c = cs.get(rowIndex);
-		if (columnIndex == 0) 
-			return c.name;
-		if (columnIndex == 1)
-			return c.recordNumber;
-		
+		if (columnIndex == 0) return cs.get(rowIndex);
+		if (columnIndex == 1) return 0;
 		return null;
 	}
 
 	@Override
-	public boolean isCellEditable(int rowIndex, int columnIndex) {
+	public boolean isCellEditable(int arg0, int arg1) {
 		// TODO Auto-generated method stub
 		return false;
 	}

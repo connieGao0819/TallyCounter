@@ -11,7 +11,7 @@ import service.CategoryService;
 public class CategoryTableModel implements TableModel {
 	
 	String[] columnNames = new String[] {"category name", "consumption times"};
-	public List<Category> cs = new CategoryService().list();
+	List<Category> cs = new CategoryService().list();
 	
 	@Override
 	public void addTableModelListener(TableModelListener arg0) {

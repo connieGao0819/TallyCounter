@@ -8,7 +8,6 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
 import entity.Category;
-import gui.listener.CategoryListener;
 import gui.model.CategoryTableModel;
 import service.CategoryService;
 import util.ColorUtil;
@@ -40,11 +39,6 @@ public class CategoryPanel extends JPanel{
 		this.setLayout(new BorderLayout());
 		this.add(editPanel, BorderLayout.SOUTH);
 		this.add(sp, BorderLayout.CENTER);
-		
-		CategoryListener listener = new CategoryListener();
-		bAdd.addActionListener(listener);
-		bEdit.addActionListener(listener);
-		bDelete.addActionListener(listener);
 	}
 	
 	public Category getSelectedCategory() {
