@@ -14,7 +14,7 @@ import service.CategoryService;
 import util.ColorUtil;
 import util.GUIUtil;
 
-public class CategoryPanel extends WorkingPanel{
+public class CategoryPanel extends JPanel{
 	static{
         GUIUtil.useLNF();
     }
@@ -49,7 +49,7 @@ public class CategoryPanel extends WorkingPanel{
 		return ctm.cs.get(index);
 	}
 	
-	@Override
+	//@Override
 	public void updateData() {
 		ctm.cs = new CategoryService().list();
 		t.updateUI();
@@ -64,7 +64,7 @@ public class CategoryPanel extends WorkingPanel{
 		}
 	}
 
-	@Override
+	//@Override
 	public void addListener() {
 		// TODO Auto-generated method stub
 		CategoryListener listener = new CategoryListener();

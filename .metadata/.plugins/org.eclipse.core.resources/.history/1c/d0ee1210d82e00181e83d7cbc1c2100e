@@ -72,9 +72,8 @@ public class CategoryPanel extends WorkingPanel{
 		bEdit.addActionListener(listener);
 		bDelete.addActionListener(listener);
 	}
+}
 
-
-    public static void main(String[] args) {
-        GUIUtil.showPanel(CategoryPanel.categoryPanel);
-    }
+public static void main(String[] args) {
+    GUIUtil.showPanel(CategoryPanel.categoryPanel);
 }

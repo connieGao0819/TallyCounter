@@ -14,7 +14,7 @@ import service.CategoryService;
 import util.ColorUtil;
 import util.GUIUtil;
 
-public class CategoryPanel extends WorkingPanel{
+public class CategoryPanel extends JPanel{
 	static{
         GUIUtil.useLNF();
     }
@@ -41,7 +41,10 @@ public class CategoryPanel extends WorkingPanel{
 		this.add(editPanel, BorderLayout.SOUTH);
 		this.add(sp, BorderLayout.CENTER);
 		
-		addListener();
+		CategoryListener listener = new CategoryListener();
+		bAdd.addActionListener(listener);
+		bEdit.addActionListener(listener);
+		bDelete.addActionListener(listener);
 	}
 	
 	public Category getSelectedCategory() {
@@ -49,7 +52,6 @@ public class CategoryPanel extends WorkingPanel{
 		return ctm.cs.get(index);
 	}
 	
-	@Override
 	public void updateData() {
 		ctm.cs = new CategoryService().list();
 		t.updateUI();
@@ -63,18 +65,8 @@ public class CategoryPanel extends WorkingPanel{
 			bDelete.setEnabled(true);
 		}
 	}
-
-	@Override
-	public void addListener() {
-		// TODO Auto-generated method stub
-		CategoryListener listener = new CategoryListener();
-		bAdd.addActionListener(listener);
-		bEdit.addActionListener(listener);
-		bDelete.addActionListener(listener);
-	}
-
-
-    public static void main(String[] args) {
+	
+	public static void main(String[] args) {
         GUIUtil.showPanel(CategoryPanel.categoryPanel);
     }
 }

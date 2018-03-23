@@ -29,4 +29,5 @@
     <fullyQualifiedTypeName name="gui.panel.CategoryPanel"/>
     <fullyQualifiedTypeName name="entity.Category"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="service.ConfigService"/>
 </qualifiedTypeNameHistroy>

@@ -9,11 +9,10 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 import gui.listener.ConfigListener;
-import service.ConfigService;
 import util.ColorUtil;
 import util.GUIUtil;
 
-public class ConfigPanel extends WorkingPanel{
+public class ConfigPanel extends JPanel{
 	static{
         GUIUtil.useLNF();
     }
@@ -43,27 +42,11 @@ public class ConfigPanel extends WorkingPanel{
 		this.add(northP, BorderLayout.NORTH);
 		this.add(centerP, BorderLayout.CENTER);
 		
-		addListener();
+		ConfigListener cl = new ConfigListener();
+		BUpdate.addActionListener(cl);
 	}
 	
 	public static void main(String[] args) {
         GUIUtil.showPanel(ConfigPanel.configPanel);
     }
-
-	@Override
-	public void updateData() {
-		// TODO Auto-generated method stub
-		String budget = new ConfigService().get(ConfigService.budget);
-		String mysqlPath = new ConfigService().get(ConfigService.mysqlPath);
-		budgetField.setText(budget);
-		sqlField.setText(mysqlPath);
-		budgetField.grabFocus();
-	}
-
-	@Override
-	public void addListener() {
-		// TODO Auto-generated method stub
-		ConfigListener cl = new ConfigListener();
-		BUpdate.addActionListener(cl);
-	}
 }

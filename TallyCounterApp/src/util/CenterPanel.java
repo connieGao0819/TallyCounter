@@ -17,6 +17,8 @@ import java.awt.Dimension;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 
+import gui.panel.WorkingPanel;
+
 public class CenterPanel extends JPanel{
 	private double rate;
 	private JComponent c;
@@ -51,6 +53,10 @@ public class CenterPanel extends JPanel{
 		Component[] cs = this.getComponents();
 		for (Component com : cs) remove(com);
 		this.add(c);
+		
+		if (c instanceof WorkingPanel) 
+			((WorkingPanel) c).updateData();
+		
 		this.updateUI();//updateUI会导致swing去调用repaint()方法
 	}
 }

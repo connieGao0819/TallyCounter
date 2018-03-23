@@ -54,10 +54,6 @@ public class ConfigPanel extends WorkingPanel{
 	public void updateData() {
 		// TODO Auto-generated method stub
 		String budget = new ConfigService().get(ConfigService.budget);
-		String mysqlPath = new ConfigService().get(ConfigService.mysqlPath);
-		budgetField.setText(budget);
-		sqlField.setText(mysqlPath);
-		budgetField.grabFocus();
 	}
 
 	@Override
