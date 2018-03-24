@@ -80,16 +80,4 @@ public class GUIUtil {
 		}
 	}
 	
-	public static boolean checkZero(JTextField tf, String input) {
-		if (!checkNumber(tf, input)) 
-			return false;
-		String text = tf.getText().trim();
-		if (Integer.parseInt(text) == 0) {
-			JOptionPane.showMessageDialog(null, input + "cannot be 0!");
-			tf.grabFocus();
-			return false;
-		}
-		return true;
-	}
-	
 }
