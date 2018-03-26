@@ -19,13 +19,8 @@ public class ChartUtil {
     private static String[] sampleLabels(List<Record> rs) {
         String[] sampleLabels = new String[rs.size()];
         for (int i = 0; i < sampleLabels.length; i++) {
-            if (0 == i % 5) {
-            	    if (i % 10 == 0) 
-            	     	sampleLabels[i] = String.valueOf(i + 1 + "st");
-            	    else 
-            	    	    sampleLabels[i] = String.valueOf(i + 1 + "th");
-            }
-                
+            if (0 == i % 5)
+                sampleLabels[i] = String.valueOf(i + 1 + "日");
         }
  
         return sampleLabels;
@@ -77,9 +72,9 @@ public class ChartUtil {
         // 显示图例说明
         chart.setLegendOn(true);
         // 把图例说明放在左侧
-        chart.setLegendPosition(Chart.TOP);
+        chart.setLegendPosition(Chart.LEFT);
         // 图例说明中的文字
-        chart.setLegendLabels(new String[] { "Monthly consumption report" });
+        chart.setLegendLabels(new String[] { "月消费报表" });
         // 图例说明的字体
         chart.setFont("legendFont", new Font("Dialog", Font.BOLD, 13));
         // 下方文字的字体

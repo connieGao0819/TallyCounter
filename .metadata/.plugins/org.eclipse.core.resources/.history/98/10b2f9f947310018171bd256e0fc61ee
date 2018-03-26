@@ -19,13 +19,8 @@ public class ChartUtil {
     private static String[] sampleLabels(List<Record> rs) {
         String[] sampleLabels = new String[rs.size()];
         for (int i = 0; i < sampleLabels.length; i++) {
-            if (0 == i % 5) {
-            	    if (i % 10 == 0) 
-            	     	sampleLabels[i] = String.valueOf(i + 1 + "st");
-            	    else 
-            	    	    sampleLabels[i] = String.valueOf(i + 1 + "th");
-            }
-                
+            if (0 == i % 5)
+                sampleLabels[i] = String.valueOf(i + 1 + "day(s)");
         }
  
         return sampleLabels;
@@ -104,7 +99,7 @@ public class ChartUtil {
     }
  
     private static String[] sampleLabels() {
-        String[] sampleLabels = new String[30];
+        String[] sampleLabels = new String[31];
  
         for (int i = 0; i < sampleLabels.length; i++) {
             if (0 == i % 5)

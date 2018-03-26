@@ -4,7 +4,6 @@
     <fullyQualifiedTypeName name="javax.swing.JPanel"/>
     <fullyQualifiedTypeName name="java.awt.List"/>
     <fullyQualifiedTypeName name="util.ColorUtil"/>
-    <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="util.DBUtil"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.sql.Statement"/>
@@ -26,9 +25,10 @@
     <fullyQualifiedTypeName name="gui.panel.MainPanel"/>
     <fullyQualifiedTypeName name="gui.panel.CategoryPanel"/>
     <fullyQualifiedTypeName name="util.GUIUtil"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="gui.panel.SpendPanel"/>
     <fullyQualifiedTypeName name="entity.Category"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="util.DateUtil"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
