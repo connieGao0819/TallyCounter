@@ -18,7 +18,6 @@
     <fullyQualifiedTypeName name="gui.panel.RecoverPanel"/>
     <fullyQualifiedTypeName name="entity.Config"/>
     <fullyQualifiedTypeName name="gui.panel.ConfigPanel"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="entity.Record"/>
     <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
     <fullyQualifiedTypeName name="service.ConfigService"/>
@@ -30,4 +29,6 @@
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="gui.panel.SpendPanel"/>
     <fullyQualifiedTypeName name="entity.Category"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="util.DateUtil"/>
 </qualifiedTypeNameHistroy>
