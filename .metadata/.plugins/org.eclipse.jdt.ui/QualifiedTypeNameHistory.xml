@@ -13,16 +13,10 @@
     <fullyQualifiedTypeName name="javax.swing.SwingUtilities"/>
     <fullyQualifiedTypeName name="gui.frame.MainFrame"/>
     <fullyQualifiedTypeName name="gui.panel.ChartPanel"/>
-    <fullyQualifiedTypeName name="gui.panel.BackupPanel"/>
     <fullyQualifiedTypeName name="gui.panel.RecoverPanel"/>
     <fullyQualifiedTypeName name="entity.Config"/>
-    <fullyQualifiedTypeName name="gui.panel.ConfigPanel"/>
     <fullyQualifiedTypeName name="entity.Record"/>
-    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
-    <fullyQualifiedTypeName name="service.ConfigService"/>
     <fullyQualifiedTypeName name="gui.panel.RecordPanel"/>
-    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
-    <fullyQualifiedTypeName name="gui.panel.MainPanel"/>
     <fullyQualifiedTypeName name="gui.panel.CategoryPanel"/>
     <fullyQualifiedTypeName name="util.GUIUtil"/>
     <fullyQualifiedTypeName name="gui.panel.SpendPanel"/>
@@ -31,4 +25,13 @@
     <fullyQualifiedTypeName name="util.DateUtil"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.lang.Runtime"/>
+    <fullyQualifiedTypeName name="java.io.OutputStream"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="gui.panel.BackupPanel"/>
+    <fullyQualifiedTypeName name="service.ConfigService"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="gui.panel.MainPanel"/>
+    <fullyQualifiedTypeName name="gui.panel.ConfigPanel"/>
+    <fullyQualifiedTypeName name="java.io.FileFilter"/>
 </qualifiedTypeNameHistroy>

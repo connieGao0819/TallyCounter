@@ -20,9 +20,9 @@ public class ConfigListener implements ActionListener {
 			return;
 		String mysqlPath = p.sqlField.getText();
 		if (mysqlPath.length() != 0) {
-			File commandFile = new File(mysqlPath, "bin/mysql");
+			File commandFile = new File(mysqlPath, "/usr/local/mysql");
 			if (!commandFile.exists()) {
-				JOptionPane.showMessageDialog(p, "The path is incorrect!");
+				JOptionPane.showMessageDialog(p, "The storage path is incorrect!");
 				return;
 			}
 		}
