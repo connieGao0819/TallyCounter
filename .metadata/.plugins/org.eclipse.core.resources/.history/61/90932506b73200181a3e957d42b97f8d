@@ -19,7 +19,6 @@ public class CategoryListener implements ActionListener{
 		JButton b = (JButton) e.getSource();
 		if (b == p.bAdd) {
 			String name = JOptionPane.showInputDialog(null);
-			if (name == null) return;
 			if (name.length() == 0) {
 				JOptionPane.showMessageDialog(p, "Category name cannot be null!");
 				return;
