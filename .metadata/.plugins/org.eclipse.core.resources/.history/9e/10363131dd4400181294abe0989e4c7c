@@ -9,7 +9,7 @@ public class MainFrame extends JFrame {
 	public static MainFrame mainFrame = new MainFrame();
 	
 	private MainFrame() {
-		this.setSize(550, 500);
+		this.setSize(600, 500);
 		this.setTitle("Tally Counter");
 		this.setContentPane(MainPanel.mainPanel);
 		this.setLocationRelativeTo(null);

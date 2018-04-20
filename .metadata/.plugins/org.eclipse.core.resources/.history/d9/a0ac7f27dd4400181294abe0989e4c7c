@@ -28,7 +28,7 @@ public class MainPanel extends JPanel{
 	public CenterPanel workingPanel;
 	
 	private MainPanel() {
-		GUIUtil.setImageIcon(bSpend, "home.png", "Consumptions");
+		GUIUtil.setImageIcon(bSpend, "home.png", "List of Consumption");
 		GUIUtil.setImageIcon(bRecord, "record.png", "Note a Bill");
         GUIUtil.setImageIcon(bCategory, "category2.png", "Category");
         GUIUtil.setImageIcon(bReport, "report.png", "Monthly Report");

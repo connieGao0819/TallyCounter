@@ -23,7 +23,7 @@ public class SpendPanel extends WorkingPanel{
 	
 	public JLabel lMonthSpend = new JLabel("Monthly Consumption");
     public JLabel lTodaySpend = new JLabel("Today's Consumption");
-    public JLabel lAvgSpendPerDay = new JLabel("Daily Consumption");
+    public JLabel lAvgSpendPerDay = new JLabel("Average daily Consumption");
     public JLabel lMonthLeft = new JLabel("Remain");
     public JLabel lDayAvgAvailable = new JLabel("Daily Availability");
     public JLabel lMonthLeftDay = new JLabel("Reamin day(s)");

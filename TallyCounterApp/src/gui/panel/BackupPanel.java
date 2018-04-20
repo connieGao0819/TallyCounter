@@ -12,7 +12,7 @@ public class BackupPanel extends WorkingPanel {
     }
              
     public static BackupPanel backupPanel = new BackupPanel();
-    JButton bBackup =new JButton("备份");
+    JButton bBackup =new JButton("Backup");
  
     public BackupPanel() {
         GUIUtil.setColor(ColorUtil.blueColor, bBackup);

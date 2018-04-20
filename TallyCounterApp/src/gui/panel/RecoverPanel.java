@@ -12,7 +12,7 @@ public class RecoverPanel extends WorkingPanel {
     }
     public static RecoverPanel recoverPanel = new RecoverPanel();
  
-    JButton bRecover =new JButton("恢复");
+    JButton bRecover =new JButton("Recover");
  
     public RecoverPanel() {
  
