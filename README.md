@@ -1,1 +1,2 @@
 # TallyCounter
+This is a small app that can help people to organize their money. It is a tally book that people can record every transaction. And the app can help to calculate the balance of each month to help people organize their money. And when people record the transaction, they can set a category of this transaction. Then, people can track where their money go after a month and they can see where they spend most. Users can back up their data and also recover it.
